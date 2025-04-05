@@ -29,10 +29,34 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+marquee_content: 👋 Welcome to MMS Studio 💡 Your go-to boutique for custom Shopify sites 🛒✨
+
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
