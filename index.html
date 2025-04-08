@@ -1,4 +1,9 @@
 ---
 title: 主页
 ---
-<h1>{{ "JekyllDo 热爱这个世界" | downcase }}</h1>
+<div class="body">
+  <div class="section-intro">
+    {% include navigation.html %}
+  </div>
+  {% include section-projects.html %}
+</div>

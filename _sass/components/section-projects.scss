@@ -1,0 +1,76 @@
+.section-projects--container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: calc(100vh - 36px);
+  min-height: 600px;
+  overflow: scroll;
+
+  .s-projects--project {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+      .s-projects--project__img {
+        @include respond-to("large-up") {
+          opacity: 0.9;
+          transform: scale(1.15) rotate(3deg);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+    .s-projects--project__img {
+      transition: all 0.3s ease;
+    }
+  }
+
+  .s-projects--project__img-wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      width: 100%;
+      padding-top: 54.58%;
+    }
+  }
+
+  .s-projects--project__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .s-projects--project__details {
+    width: 100%;
+    height: 10%;
+    min-height: fit-content;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+
+  .s-projects--project__project-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+
+  .s-projects--project__project-description {}
+
+  .s-projects--project__project-partnership {}
+}

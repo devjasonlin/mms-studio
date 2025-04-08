@@ -1,0 +1,9 @@
+.body {
+  display: flex;
+
+  .section-intro {
+    width: 50%;
+    max-height: 100vh;
+    overflow: scroll;
+  }
+}

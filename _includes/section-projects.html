@@ -1,0 +1,22 @@
+
+<div class="section-projects--container">
+  {% for post in site.posts %}
+  <a 
+    href="{{ site.baseurl }}/{{ post.url }}" 
+    class="s-projects--project"
+  >
+    <div class="s-projects--project__img-wrapper">
+      <img
+        class="s-projects--project__img"
+        src="{{ site.baseurl}}{{ post.image }}" 
+        alt="{{ post.title }}"
+      />
+    </div>
+    <div class="s-projects--project__details">
+      <div class="s-projects--project__details-title">{{ post.title }}</div>
+      <div class="s-projects--project__details-description">{{ post.description }}</div>
+      <div class="s-projects--project__details-partnership">Partnership with <strong>{{ post.agency }}</strong></div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
