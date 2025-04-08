@@ -65,9 +65,10 @@
     background-color: rgba($color: #000000, $alpha: 0.5);
   }
 
-  .s-projects--project__project-title {
+  .s-projects--project__details-title {
     font-size: 1.8rem;
-    font-weight: 800;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
   }
 
   .s-projects--project__project-description {}
