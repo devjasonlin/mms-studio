@@ -1,8 +1,145 @@
 :root {
   font-size: 62.5%;
 }
+
 body {
   font-family: $font-ar;
   font-size: 1.6rem; /* 1.6rem = 16px */
   padding: 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-number__wrapper {
+  padding: 10rem 0 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  .step-number {
+    font-size: 1.2rem;
+    color: $colour-grey-1;
+  }
+}
+
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .section-wrapper {
+    width: 50%;
+
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    @include respond-to("medium-down") {
+      width: 100%;
+    }
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: $colour-primary-black;
+  }
+
+  .section-sub-title {
+    font-size: 1.4rem;
+    color: $colour-grey-1;
+  }
+
+  .section-description {
+    font-size: 1.4rem;
+    color: $colour-grey-1;
+    text-transform: uppercase;
+  }
+
+  .section-content {
+    font-size: 2.6rem;
+    line-height: 4rem;
+    padding: 0 0 5rem 0;
+
+    @include respond-to("medium-down") {
+      font-size: 2.3rem;
+      line-height: 3.2rem;
+    }
+
+    &.with-overlay {
+      position: relative;
+
+      &:after {
+        content: "";
+
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        background: linear-gradient(0deg, $colour-primary-white 0%, transparent 100%);
+        
+      }
+    }
+  }
+
+  .section-link__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 0 0;
+  }
+}
+
+.common-btn-with-arrow {
+  display: inline-block;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background-color: rgba($color: $colour-primary-black, $alpha: 0.08);
+  transition: all 0.3s ease;
+
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    background-color: $colour-primary-black;
+    transition: all 0.3s ease;
+
+    svg {
+      transition: all 0.3s ease;
+      &:nth-child(1) {
+        left: 150%;
+        opacity: 0;
+      }
+      &:nth-child(2) {
+        left: 50%;
+        opacity: 1;
+      }
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+
+    &:nth-child(1) {
+      fill: $colour-primary-black;
+      opacity: 1;
+    }
+    &:nth-child(2) {
+      fill: $colour-primary-white;
+      left: -150%;
+      opacity: 0;
+    }
+  }
 }

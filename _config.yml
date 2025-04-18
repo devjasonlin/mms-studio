@@ -42,7 +42,9 @@ marquee_content: [
 
 site_name: MMS Studio
 author: Jason Lin
+position: Founder / Developer
 studio_url: mms-studio.co.nz
+author_intro: "Shopify developer with 6+ years of experience, specializing in building custom Shopify websites tailored to unique business needs. Skilled in theme customization, performance optimization, and user-focused design. Ready to help bring any e-commerce vision to life."
 
 collections:
   authors:
