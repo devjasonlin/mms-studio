@@ -7,24 +7,30 @@
 
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 9;
 }
 
 .marquee-content {
-  display: inline-block;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  min-width: 100%;
   padding-left: 100%;
-  animation: marquee 50s linear infinite;
+  animation: scroll 30s linear infinite;
 
   span {
     margin: 0 20px;
   }
 }
 
-@keyframes marquee {
+@keyframes scroll {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
+
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% - 2rem));
   }
 }

@@ -3,8 +3,8 @@ export class MarqueeEle extends HTMLElement {
   constructor() {
     super();
 
-    this.marqueeInit();
     this.marqueeClone();
+    this.marqueeInit();
     this.marqueeBehaviour();
   }
   marqueeInit() {
@@ -17,7 +17,7 @@ export class MarqueeEle extends HTMLElement {
     const marqueeContent = this.querySelector('.marquee-content');
     const marqueeItems = this.querySelectorAll('.marquee-content span');
     
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 3; i++) {
       marqueeItems.forEach(item => {
         const clone = item.cloneNode(true);
         marqueeContent.appendChild(clone);
