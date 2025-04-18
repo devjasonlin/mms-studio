@@ -1,22 +1,25 @@
-
-<div class="section-projects--container">
-  {% for post in site.posts %}
-  <a 
-    href="{{ site.baseurl }}/{{ post.url }}" 
-    class="s-projects--project"
-  >
-    <div class="s-projects--project__img-wrapper">
-      <img
-        class="s-projects--project__img"
-        src="{{ site.baseurl}}{{ post.image }}" 
-        alt="{{ post.title }}"
-      />
-    </div>
-    <div class="s-projects--project__details">
-      <div class="s-projects--project__details-title">Project: {{ post.title }}</div>
-      <div class="s-projects--project__details-description">About: {{ post.description }}</div>
-      <div class="s-projects--project__details-partnership">Partnership with: <strong>{{ post.agency }}</strong></div>
-    </div>
-  </a>
-  {% endfor %}
+<div class="section-projects">
+  <div class="section-projects--container">
+    {% for post in site.posts %}
+    <project-card class="s-projects--project-wrapper">
+      <a 
+        href="{{ site.baseurl }}/{{ post.url }}" 
+        class="s-projects--project"
+      >
+        <div class="s-projects--project__img-wrapper">
+          <img
+            class="s-projects--project__img"
+            src="{{ site.baseurl}}{{ post.image }}" 
+            alt="{{ post.title }}"
+          />
+        </div>
+        <div class="s-projects--project__details">
+          <div class="s-projects--project__details-title">Project: {{ post.title }}</div>
+          <div class="s-projects--project__details-description">About: {{ post.description }}</div>
+          <div class="s-projects--project__details-partnership">Partnership with: <strong>{{ post.agency }}</strong></div>
+        </div>
+      </a>
+    </project-card>
+    {% endfor %}
+  </div>
 </div>
