@@ -2,6 +2,8 @@
 
 <marquee-ele class="marquee-container" data-marquee-colours="{{ colours }}">
   <div class="marquee-content">
-    {{ site.marquee_content }}
+    {% for item in site.marquee_content %}
+    <span>{{ item }}</span>
+    {% endfor %}
   </div>
 </marquee-ele>
