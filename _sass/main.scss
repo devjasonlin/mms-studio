@@ -1,7 +1,9 @@
+@import './base/colours.scss';
 @import './base/reset.scss';
 @import './base/font.scss';
 @import './base/breakpoints.scss';
-
+@import './libs/common.scss';
+@import './libs/global-animation.scss';
 
 @import './layout/global.scss';
 @import './layout/homepage.scss';

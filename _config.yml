@@ -40,6 +40,10 @@ marquee_content: [
   "💡 Shopify Specialist | Custom Solutions | Theme Crafting 💡"
 ]
 
+site_name: MMS Studio
+author: Jason Lin
+studio_url: mms-studio.co.nz
+
 collections:
   authors:
     output: true
