@@ -29,6 +29,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+introduction:
+  title: "Hi! 👋🏼 I'm Jason 🦸🏼‍♂️"
+  education: "Graduated from Lincoln University with a Master of Applied Computing 🎓"
+  content_one: "Shopify developer with 6+ years of experience 👨‍💻"
+  content_two: "Specialize in creating custom Shopify sites that are tailored to your unique needs ♾️"
 marquee_content: [
   "✨ Welcome to MMS Studio | Your go-to boutique for custom Shopify sites ✨",
   "🚀 6+ years Shopify expertise 🚀",
