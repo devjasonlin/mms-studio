@@ -1,0 +1,38 @@
+// for 'style guide' page
+
+.section-style-guide {
+  .section-style-guide--title {
+    font-size: 3rem;
+    margin: 3rem 0;
+  }
+  .style-item--sub-title {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  .style-item--wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .style-item--code span {
+    display: inline-block;
+    background-color: #d4d4d4;
+    color: #905;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+
+  .style-item--preview {}
+
+  .style-item--colour {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  }
+}
