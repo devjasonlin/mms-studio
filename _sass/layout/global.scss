@@ -40,7 +40,7 @@ body {
     
     &.with-sticky {
       position: sticky;
-      top: 85px;
+      top: 0;
 
       background-color: $colour-primary-white;
       z-index: 2;
@@ -85,6 +85,19 @@ body {
         width: 100%;
       }
     }
+
+    &.section-wrapper-5 {
+      width: 100%;
+      padding: 2rem;
+
+      @include respond-to("large-down") {
+        padding: 2rem 1rem;
+      }
+      
+      @include respond-to("medium-down") {
+        padding: 2rem 0;
+      }
+    }
   }
 
   .section-title {
@@ -96,7 +109,6 @@ body {
   .section-sub-title {
     font-size: 1.4rem;
     color: $colour-grey-1;
-    margin: 0 0 2rem 0;
   }
 
   .section-description {

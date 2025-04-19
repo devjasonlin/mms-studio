@@ -2,12 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  position: sticky;
-  top: 0;
-  z-index: 9;
-
-  background-color: $colour-primary-white;
-
   .global-header--wrapper {
     display: flex;
     gap: 1rem;
