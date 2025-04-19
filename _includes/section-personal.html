@@ -1,0 +1,17 @@
+<div class="section-container">
+  <div class="section-wrapper section-wrapper-2 with-sticky">
+    <div class="section-title">About my personal</div>
+    <div class="section-sub-title">COOPERATION</div>
+  </div>
+  <div class="section-wrapper section-wrapper-2">
+    <div class="section-content with-padding">{{ site.author_bio }}</div>
+    <div class="section-sub-content">{{ site.author_sub_bio }}</div>
+    <div class="section-points">
+      {% for item in site.services %}
+        <div class="section-points--point">{{ item }}</div>
+        <div class="section-divider"></div>
+      {% endfor %}
+    </div>
+ 
+  </div>
+</div>

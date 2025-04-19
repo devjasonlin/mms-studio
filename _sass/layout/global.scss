@@ -40,47 +40,50 @@ body {
     
     &.with-sticky {
       position: sticky;
-      top: 0;
+      top: 85px;
+
+      background-color: $colour-primary-white;
+      z-index: 2;
     }
 
-    @include respond-to("large-down") {
+    &.section-wrapper-2 {
       width: 50%;
-    }
-
-    @include respond-to("medium-down") {
-      width: 100%;
-    }
-  }
-
-  .section-wrapper-2 {
-    width: 50%;
-    padding: 2rem 0;
-  }
-
-  .section-wrapper-3 {
-    width: 33%;
-
-    padding: 2rem;
-
-    @include respond-to("large-down") {
-      padding: 2rem 1rem;
-    }
-
-    @include respond-to("medium-down") {
       padding: 2rem 0;
-    }
-  }
 
-  .section-wrapper-4 {
-    width: 66%;
-    padding: 2rem;
-
-    @include respond-to("large-down") {
-      padding: 2rem 1rem;
+      @include respond-to("medium-down") {
+        width: 100%;
+      }
     }
-    
-    @include respond-to("medium-down") {
-      padding: 2rem 0;
+  
+    &.section-wrapper-3 {
+      width: 33%;
+  
+      padding: 2rem;
+  
+      @include respond-to("large-down") {
+        padding: 2rem 1rem;
+        width: 50%;
+      }
+  
+      @include respond-to("medium-down") {
+        padding: 2rem 0;
+        width: 100%;
+      }
+    }
+  
+    &.section-wrapper-4 {
+      width: 66%;
+      padding: 2rem;
+  
+      @include respond-to("large-down") {
+        padding: 2rem 1rem;
+        width: 50%;
+      }
+      
+      @include respond-to("medium-down") {
+        padding: 2rem 0;
+        width: 100%;
+      }
     }
   }
 
@@ -107,6 +110,10 @@ body {
     line-height: 4rem;
     padding: 0 0 5rem 0;
 
+    &.with-padding {
+      padding: 0 2rem 5rem 0;
+    }
+
     @include respond-to("medium-down") {
       font-size: 2.3rem;
       line-height: 3.2rem;
@@ -129,6 +136,16 @@ body {
         background: linear-gradient(0deg, $colour-primary-white 0%, transparent 100%);
         
       }
+    }
+  }
+
+  .section-sub-content {
+    font-size: 2rem;
+    line-height: 4rem;
+    color: $colour-grey-1;
+
+    &.with-padding {
+      padding: 0 2rem 5rem 0;
     }
   }
 

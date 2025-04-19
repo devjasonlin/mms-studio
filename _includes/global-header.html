@@ -1,10 +1,12 @@
 <div class="global-header">
-  <div class="cssanimation leFadeInRight sequence global-header__title">
-    {{ site.author }}
+  <div class="global-header--wrapper">
+    <div class="cssanimation leFadeInRight sequence global-header__title">
+      {{ site.author }}
+    </div>
+    <a class="animate__bounceIn global-header__site" href="{{ site.url }}">
+      {{ site.studio_url }}
+    </a>
   </div>
-  <a class="animate__bounceIn global-header__site" href="{{ site.url }}">
-    {{ site.studio_url }}
-  </a>
+  <div class="section-divider"></div>
+  <div class="section-divider"></div>
 </div>
-<div class="section-divider"></div>
-<div class="section-divider"></div>

@@ -1,14 +1,23 @@
 .global-header {
   display: flex;
-  gap: 1rem;
-  align-items: flex-end;
+  flex-direction: column;
 
-  padding: 0 0 2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 
-  @include respond-to("medium-down") {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
+  background-color: $colour-primary-white;
+
+  .global-header--wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+
+    @include respond-to("medium-down") {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
   }
 
   .global-header__title {
