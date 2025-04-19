@@ -1,0 +1,12 @@
+{% assign colours = site.data.marquee | map: "colour" | join: "," %}
+
+<marquee-ele 
+  class="marquee-container" 
+  data-marquee-colours="{{ colours }}"
+>
+  <div class="marquee-content">
+    {% for item in site.marquee_content %}
+    <span>{{ item }}</span>
+    {% endfor %}
+  </div>
+</marquee-ele>

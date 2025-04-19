@@ -24,15 +24,66 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/mms-studio/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+
+introduction:
+  title: "Hi! 👋🏼 I'm Jason 🦸🏼‍♂️"
+  education: "Graduated from Lincoln University with a Master of Applied Computing 🎓"
+  content_one: "Shopify developer with 6+ years of experience 👨‍💻"
+  content_two: "Specialize in creating custom Shopify sites that are tailored to your unique needs ♾️"
+marquee_content: [
+  "✨ Welcome to MMS Studio | Your go-to boutique for custom Shopify sites ✨",
+  "🚀 6+ years Shopify expertise 🚀",
+  "💡 Shopify Specialist | Custom Solutions | Theme Crafting 💡"
+]
+
+site_name: MMS Studio
+author: Jason Lin
+position: Founder / Developer
+studio_url: mms-studio.co.nz
+author_intro: "Shopify developer with 6+ years of experience, specializing in building custom Shopify websites tailored to unique business needs. Skilled in theme customization, performance optimization, and user-focused design. Ready to help bring any e-commerce vision to life."
+author_bio: "Jason - Senior Shopify developer based in New Zealand🇳🇿, with over 6 years of experience working at local Shopify agencies. I'm passionate about freelancing and offers high-quality Shopify development services at more affordable rates."
+author_sub_bio: "Always eager to grow by tackling new challenges, from small tasks to large-scale projects. Skilled in the following areas:"
+services: [
+  "Shopfiy Store Setup",
+  "Shopify Theme Customization",
+  "Shopify App Integration",
+  "Shopify Store Maintenance",
+  "Shopify Store Support",
+  "Shopify SEO Optimization"
+]
+
+collections:
+  authors:
+    output: true
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.

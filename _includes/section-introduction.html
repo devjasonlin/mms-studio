@@ -1,0 +1,18 @@
+<div class="section-container">
+  <div class="section-wrapper section-wrapper-2 with-sticky">
+    <div class="section-title">{{ site.author }}©</div>
+    <div class="section-sub-title">{{ site.position }}</div>
+  </div>
+  <div class="section-wrapper section-wrapper-2">
+    <div class="section-content with-overlay">{{ site.author_intro }}</div>
+    <div class="section-divider"></div>
+    <div class="section-link__container">
+      <div class="section-description">
+        [about me]
+      </div>
+      <div class="section-link__wrapper">
+        {% include buttons/btn-with-arrow.html url="/about/" text="About Me" %}
+      </div>
+    </div>
+  </div>
+</div>

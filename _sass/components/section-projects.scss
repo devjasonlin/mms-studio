@@ -1,0 +1,78 @@
+.section-projects--project {
+  text-decoration: none;
+  position: relative;
+
+  &:hover {
+    .section-image {
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    .common-btn-with-arrow {
+      width: 48px;
+      height: 48px;
+      opacity: 1;
+      background-color: $colour-primary-white;
+      transition: all 0.3s ease;
+  
+      svg {
+        transition: all 0.3s ease;
+        &:nth-child(1) {
+          left: 150%;
+          opacity: 0;
+        }
+        &:nth-child(2) {
+          left: 50%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .common-btn-with-arrow {
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    background-color: $colour-primary-white;
+
+    svg {
+      &:nth-child(2) {
+        fill: $colour-primary-black;
+      }
+    }
+  }
+
+  .section-image--container {
+    position: relative;
+    margin: 2rem 0 0 0;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 100%;
+    }
+  }
+
+  .section-image--wrapper {
+    width: calc(100% - 6rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .section-image {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+}
+
+.project-overflow-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
