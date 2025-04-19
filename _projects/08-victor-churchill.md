@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Victor Churchill - Shopify rebrand project
+title: Victor Churchill
+sub_title: Shopify rebrand project
 description: Shopify rebranding project
 agency: Moustache Republic
 permalink: /projects/victor-churchill

@@ -4,7 +4,9 @@
 export class ProjectCard extends HTMLElement {
   constructor() {
     super();
-    this.projectCardInit();
+    this.colours = window.colours.split(",");
+    // this.projectCardInit();
+    this.randomBackground();
   }
   projectCardInit() {
     this.addEventListener('mousemove', function(e) {
@@ -23,5 +25,13 @@ export class ProjectCard extends HTMLElement {
     this.addEventListener('mouseleave', function() {
         this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
     });
+  }
+  randomBackground() {
+    let projectCardColours = ['#BFB8A5'];
+    projectCardColours = this.colours;
+    const randomIndex = Math.floor(Math.random() * projectCardColours.length);
+    
+    const randomColour = projectCardColours[randomIndex];   
+    this.querySelector('.section-image--container').style.backgroundColor = randomColour;
   }
 }

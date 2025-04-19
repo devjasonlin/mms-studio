@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Rebecca Vallance - Shopify retainer service
+title: Rebecca Vallance
+sub_title: Shopify retainer service
 description: Shopify retainer service
 agency: Moustache Republic
 permalink: 

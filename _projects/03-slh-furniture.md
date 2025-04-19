@@ -1,6 +1,7 @@
 ---
 layout: post
-title: SLH Furniture - Shopify retainer service
+title: SLH Furniture
+sub_title: Shopify retainer service
 description: 
 agency: Pocket Square
 permalink: 

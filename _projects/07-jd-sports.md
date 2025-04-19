@@ -1,6 +1,7 @@
 ---
 layout: post
-title: JD Sports - Shopify rebrand project
+title: JD Sports
+sub_title: Shopify rebrand project
 description: Shopify rebranding project
 agency: Moustache Republic
 permalink: 
