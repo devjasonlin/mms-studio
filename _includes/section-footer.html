@@ -1,2 +1,14 @@
 <div class="section-divider"></div>
-<div>footer</div>
+<div class="section-footer">
+  <div class="social-links">
+    {% for item in site.social_links %}
+      <a class="social-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+        {{ item.label }}
+      </a>
+    {% endfor %}
+  </div>
+  <div class="footer-main-url">
+    <a href="{{ site.url }}">{{ site.studio_url }}</a>
+  </div>
+  <div class="footer-copyright">© {{ site.time | date: "%Y" }}</div>
+</div>
