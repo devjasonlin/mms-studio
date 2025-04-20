@@ -8,8 +8,10 @@
     <div class="section-sub-content">{{ site.author_sub_bio }}</div>
     <div class="section-points">
       {% for item in site.services %}
-        <div class="section-points--point">{{ item }}</div>
-        <div class="section-divider"></div>
+        <div class="section-points--point visible-animation left">{{ item }}</div>
+        {% if forloop.last == false %}
+          <div class="section-divider visible-animation left"></div>
+        {% endif %}
       {% endfor %}
     </div>
  

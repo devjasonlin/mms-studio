@@ -11,7 +11,7 @@
 
   {% for project in site.projects reversed limit:10 %}
   <project-card class="section-wrapper {% if forloop.index0 == 3 %}section-wrapper-4{% else %}section-wrapper-3{% endif %}">
-    <a href="{{ project.permalink }}" class="section-projects--project">
+    <a href="{{ project.permalink }}" class="section-projects--project visible-animation">
       <div class="section-title">{{ project.title }}</div>
       <div class="section-sub-title">{{ project.sub_title }}</div>
 
