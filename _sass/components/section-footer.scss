@@ -34,6 +34,7 @@
     @include respond-to("large-down") {
       width: 50%;
       justify-content: flex-start;
+      margin: 0 0 1rem 0;
     }
     
     @include respond-to("medium-down") {
@@ -60,7 +61,7 @@
     }
     @include respond-to("medium-down") {
       width: 100%;
-      text-align: center;
+      text-align: left;
     }
   }
 }
