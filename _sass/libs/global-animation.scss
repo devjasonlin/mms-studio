@@ -6,3 +6,24 @@
   }
   to { opacity: 1 }
 }
+
+.visible-animation {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.left {
+    transform: translateX(50px); /* 从右边50px滑入 */
+
+    &.visible {
+      transform: translateX(0); /* 回到原位 */
+    }
+  }
+}

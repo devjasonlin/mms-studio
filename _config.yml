@@ -56,6 +56,12 @@ services: [
   "Shopify SEO Optimization"
 ]
 
+social_links:
+  - label: "UnicornFactory"
+    url: "https://www.unicornfactory.nz/profiles/jason-lin"
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/jason-l-81824417b/"
+
 collections:
   authors:
     output: true
