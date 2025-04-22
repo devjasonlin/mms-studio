@@ -1,4 +1,10 @@
-<div class="section-container">
+---
+title: Portfolio
+layout: default
+---
+<!-- <link rel="stylesheet" href="{{ '/assets/css/about.css' | relative_url }}"> -->
+<div class="main-portfolio--container section-container">
+  {% include step-number.html step_num="1" %}
   <div class="section-wrapper section-wrapper-5 with-sticky">
     <div class="section-title">Latest Projects</div>
     <div class="section-sub-title">Shopify & Shopify Plus</div>
@@ -9,9 +15,8 @@
     window.colours = "{{ colours }}";
   </script>
 
-  {% for project in site.projects reversed limit:6 %}
+  {% for project in site.projects reversed %}
   <project-card class="section-wrapper section-wrapper-3">
-  <!-- <project-card class="section-wrapper {% if forloop.index0 == 3 %}section-wrapper-4{% else %}section-wrapper-3{% endif %}"> -->
     <a href="{{ project.permalink }}" class="section-projects--project visible-animation">
       <div class="section-title">{{ project.title }}</div>
       <div class="section-sub-title">{{ project.sub_title }}</div>
@@ -20,7 +25,7 @@
         <div class="section-image--wrapper">
           <img
             class="section-image"
-            src="./{{ project.image }}"
+            src="{{ project.image }}"
             alt="{{ project.title }}"
           />
         </div>
@@ -40,18 +45,4 @@
   </project-card>
   {% endfor %}
 
-  <div class="section-wrapper section-wrapper-3"></div>
-
-  <div class="section-wrapper section-wrapper-2" style="margin-left: auto;">
-    <div class="section-divider"></div>
-
-    <div class="section-link__container">
-      <div class="section-description">
-        [CHECK PORTFOLIO]
-      </div>
-      <div class="section-link__wrapper">
-        {% include buttons/btn-with-arrow.html url="/portfolio/" text="portfolio" %}
-      </div>
-    </div>
-  </div>
 </div>
