@@ -1,0 +1,133 @@
+---
+title: About Me
+layout: default
+---
+<link rel="stylesheet" href="{{ '/assets/css/about.css' | relative_url }}">
+<div class="main-content main-about--container">
+    {% include step-number.html step_num="1" %}
+    <div class="section-container">
+      <div class="section-wrapper section-wrapper-2 with-sticky">
+        <div class="section-title">{{ site.author }}©</div>
+        <div class="section-sub-title">{{ site.position }}</div>
+      </div>
+      <div class="section-wrapper section-wrapper-2">
+        <div class="section-content">{{ site.author_intro }}</div>
+        <div class="section-sub-content">{{ site.author_sub_bio }}</div>
+        <div class="section-points">
+          {% for item in site.services %}
+            <div class="section-points--point visible-animation left">{{ item }}</div>
+            {% if forloop.last == false %}
+              <div class="section-divider visible-animation left"></div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    
+    {% include step-number.html step_num="2" %}
+    <div class="section-container">
+      <div class="section-wrapper section-wrapper-2 with-sticky">
+        <div class="section-title">About my personal</div>
+        <div class="section-sub-title">PORTRAIT</div>
+      </div>
+      <div class="section-wrapper section-wrapper-2">
+        <div class="section-image--wrapper">
+          <img src="{{ site.author_image }}" alt="{{ site.author }}" class="section-image" />
+        </div>
+      </div>
+    </div>
+
+    {% include step-number.html step_num="3" %}
+    <div class="section-container">
+      <div class="section-wrapper section-wrapper-2 with-sticky">
+        <div class="section-title">About my experience</div>
+        <div class="section-sub-title">Knowledge</div>
+      </div>
+      <div class="section-wrapper section-wrapper-2">
+        <div class="section-line--items">
+          {% for item in site.experience %}
+          <div class="section-line--item visible-animation left">
+            <div class="section-line--item-logo">
+              <img src="{{ item.logo }}" alt="company Logo" class="section-line--item-logo-image" />
+            </div>
+            <div class="section-line--item-content">
+              <div class="section-line--item-title">{{ item.title }}</div>
+              <div class="section-line--item-instituion">{{ item.company }}</div>
+              <div class="section-line--item-year">{{ item.year }}</div>
+            </div>
+          </div>
+          {% if forloop.last == false %}
+            <div class="section-divider visible-animation left"></div>
+          {% endif %}
+          {% endfor %}
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="section-link__container">
+          <div class="section-description">
+            [CHECK PORTFOLIO]
+          </div>
+          <div class="section-link__wrapper">
+            {% include buttons/btn-with-arrow.html url="/portfolio/" text="portfolio" %}
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    {% include step-number.html step_num="4" %}
+    <div class="section-container">
+      <div class="section-wrapper section-wrapper-2 with-sticky">
+        <div class="section-title">About my education</div>
+        <div class="section-sub-title">STUDY</div>
+      </div>
+      <div class="section-wrapper section-wrapper-2">
+        <div class="section-line--items">
+          {% for item in site.education %}
+          <div class="section-line--item visible-animation left">
+            <div class="section-line--item-logo">
+              <img src="{{ item.logo }}" alt="institution Logo" class="section-line--item-logo-image" />
+            </div>
+            <div class="section-line--item-content">
+              <div class="section-line--item-title">{{ item.title }}</div>
+              <div class="section-line--item-instituion">{{ item.institution }}</div>
+              <div class="section-line--item-year">{{ item.year }}</div>
+            </div>
+          </div>
+          {% if forloop.last == false %}
+            <div class="section-divider visible-animation left"></div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% include step-number.html step_num="5" %}
+    <div class="section-container">
+      <div class="section-wrapper section-wrapper-2 with-sticky">
+        <div class="section-title">About my certifications</div>
+        <div class="section-sub-title">CERTIFIED</div>
+      </div>
+      <div class="section-wrapper section-wrapper-2">
+        <div class="section-line--items">
+          {% for item in site.certification %}
+          <div class="section-line--item visible-animation left">
+            <div class="section-line--item-logo">
+              <img src="{{ item.logo }}" alt="institution Logo" class="section-line--item-logo-image" />
+            </div>
+            <div class="section-line--item-content">
+              <div class="section-line--item-title">{{ item.title }}</div>
+              <div class="section-line--item-instituion">{{ item.institution }}</div>
+              <div class="section-line--item-year">{{ item.year }}</div>
+            </div>
+          </div>
+          {% if forloop.last == false %}
+            <div class="section-divider visible-animation left"></div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+</div>

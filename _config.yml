@@ -55,6 +55,37 @@ services: [
   "Shopify Store Support",
   "Shopify SEO Optimization"
 ]
+author_image: "https://cdn.prod.website-files.com/5a6a34c2920f950001f51775/67ff781d6493a0e4699efac3_T36Mtazsalt9Jrj2mQ-3EHnFVdwyYML8lvgIaVMc7Z0.webp"
+education:
+  - title: "Master's degree, Applied Computing"
+    institution: "Lincoln University"
+    year: Oct 2023 - Nov 2024
+    logo: "https://media.licdn.com/dms/image/v2/D560BAQHs-BB5uuLAlQ/company-logo_100_100/company-logo_100_100/0/1689044544278/lincolnuninz_logo?e=1750896000&v=beta&t=I-PXDx1v-QNvKf46XNfgQ2UHn28NUvnys0wA9H6nqZE"
+  - title: "Associate's degree, Web & UX Design"
+    institution: "Yoobee College of Creative Innovation"
+    year: 2018 - 2019
+    logo: "https://media.licdn.com/dms/image/v2/C560BAQH4JmT10mR5rA/company-logo_100_100/company-logo_100_100/0/1644871039011/yoobeecolleges_logo?e=1750896000&v=beta&t=_o8_HTEJ-3wJLuPBR4nD4euqQpSR7tOoZy4aYoyPWdg"
+
+experience:
+  - title: "Senior Developer"
+    company: "Moustache Republic"
+    year: May 2024 - Present
+    logo: "https://media.licdn.com/dms/image/v2/C560BAQFht5wFD32lsg/company-logo_100_100/company-logo_100_100/0/1634619657208/moustache_republic_logo?e=1750896000&v=beta&t=bq2500-qi8Ssown8wI2DQiqxtONO1ImN0XiJKqU-9EU"
+  - title: "Senior Web Developer"
+    company: "Pocket Square"
+    year: January 2023 - May 2024
+    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGju6L-P6emBA/company-logo_100_100/company-logo_100_100/0/1639692351635/pocket_square_logo?e=1750896000&v=beta&t=YGRBs8BoHrli7lNtIE7-GWeo4A57n0vsk-429Rnfqcs"
+  - title: "Senior Developer"
+    company: "Moustache Republic"
+    year: May 2019 - January 2023
+    logo: "https://media.licdn.com/dms/image/v2/C560BAQFht5wFD32lsg/company-logo_100_100/company-logo_100_100/0/1634619657208/moustache_republic_logo?e=1750896000&v=beta&t=bq2500-qi8Ssown8wI2DQiqxtONO1ImN0XiJKqU-9EU"
+
+certification:
+  - title: Liquid Storefronts for Theme Developers - Verified Skill Badge
+    institution: "Shopify"
+    year: Issued Nov 2024
+    logo: https://media.licdn.com/dms/image/v2/D560BAQH9Y3IDQjuPSw/company-logo_100_100/company-logo_100_100/0/1737143878716/shopify_logo?e=1750896000&v=beta&t=niqip8zzJgsRPjhcBb8Uyb5KEQ_wHX5HF6h6XHOA254
+
 
 social_links:
   - label: "UnicornFactory"
@@ -90,6 +121,11 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
