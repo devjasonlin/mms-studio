@@ -6,6 +6,7 @@
     display: flex;
     gap: 1rem;
     align-items: flex-end;
+    text-decoration: none;
 
     @include respond-to("medium-down") {
       flex-direction: column;

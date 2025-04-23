@@ -1,0 +1,65 @@
+---
+layout: post
+title: Project | flo & frankie
+project_title: flo & frankie
+sub_title: Shopify retainer service
+industry: Fashion
+my_role: Front End maintenance, New Features Implementation
+introduction: Flo & Frankie is a New Zealand-based boutique offering a curated selection of contemporary fashion, homewares, and gifts from over 200 brands. Founded in 2013 by a mother and her three daughters, the brand emphasizes community support, sustainability, and empowering women through its “Flo Gives Back” initiative.
+platform: Shopify Plus
+agency: Pocket Square
+permalink: /portfolio/flo-and-frankie
+image: /assets/images/projects/flo-and-frankie-01.jpg
+client_site: https://www.floandfrankie.com.au/
+---
+
+
+<div class="main-project">
+  <div class="main-project--container">
+    <project-card class="main-project--title">
+      <div class="background-with-random-colour">{{ page.project_title }}</div>
+    </project-card>
+    <div class="main-project--content">
+      <div class="main-project--line with-row">
+        {% include project-item.html label="INDUSTRY" content=page.industry %}
+        {% include project-item.html label="MY ROLE" content=page.my_role %}
+
+        <a class="main-project--link" target="_blank" href="{{ page.client_site }}" alt="View Site">
+          <span>View Site</span>
+
+          <span class="common-btn-with-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div class="section-divider"></div>
+      
+      <div class="main-project--line with-column">
+        {% include project-item.html label="INTRODUCTION" content=page.introduction %}
+      </div>
+      <div class="section-divider"></div>
+
+      <div class="main-project--line with-column">
+        {% assign new_content = 'Co-work with ' | append: page.agency %}
+        {% include project-item.html label="COOPERATION" content=new_content %}
+      </div>
+      <div class="section-divider"></div>
+
+      <div class="main-project--line with-column">
+        {% if page.platform == 'Shopify Plus' %}
+          {% assign platform_image = '/assets/images/shopify-plus.svg' %}
+        {% elsif page.platform == 'Shopify' %}
+          {% assign platform_image = '/assets/images/shopify.svg' %}
+        {% endif %}
+        {% include project-item.html label="PLATFORM" image=platform_image %}
+      </div>
+      <div class="section-divider"></div>
+
+    </div>
+  </div>
+</div>

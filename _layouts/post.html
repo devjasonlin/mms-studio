@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html>
   <head>
@@ -12,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> 
     <script type="text/javascript" src="{{ '/assets/js/cssanimation-gsap.min.js' | relative_url}}"></script>
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/project.css' | relative_url }}">
     <script type="module" src="{{ '/assets/js/global.js' | relative_url }}"></script>
     <script type="module" src="{{ '/assets/js/components.js' | relative_url }}"></script>
     {% feed_meta %}
@@ -21,5 +24,10 @@
     {% include global-header.html %}
     {{ content }}
     {% include section-footer.html %}
+
+    {% assign colours = site.data.marquee | map: "colour" | join: "," %}
+    <script>
+      window.colours = "{{ colours }}";
+    </script>
   </body>
 </html>

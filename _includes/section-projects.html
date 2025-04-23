@@ -16,11 +16,11 @@
       <div class="section-title">{{ project.title }}</div>
       <div class="section-sub-title">{{ project.sub_title }}</div>
 
-      <div class="section-image--container">
+      <div class="section-image--container background-with-random-colour">
         <div class="section-image--wrapper">
           <img
             class="section-image"
-            src="./{{ project.image }}"
+            src="{{ project.image | relative_url }}"
             alt="{{ project.title }}"
           />
         </div>
