@@ -32,6 +32,6 @@ export class ProjectCard extends HTMLElement {
     const randomIndex = Math.floor(Math.random() * projectCardColours.length);
     
     const randomColour = projectCardColours[randomIndex];   
-    this.querySelector('.section-image--container').style.backgroundColor = randomColour;
+    this.querySelector('.background-with-random-colour').style.backgroundColor = randomColour;
   }
 }

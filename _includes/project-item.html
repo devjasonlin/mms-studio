@@ -1,0 +1,14 @@
+<div class="main-project--item">
+  <div class="main-project--item-label">{{ include.label }}</div>
+  <div class="main-project--item-content">
+    {% if include.content %}
+      {{ include.content }}
+    {% endif %}
+
+    {% if include.image %}
+      <div class="main-project--item-image">
+        <img src="{{ include.image | relative_url }}" alt="{{ include.label }}">
+      </div>
+    {% endif %}
+  </div>
+</div>
