@@ -94,8 +94,6 @@ social_links:
     url: "https://www.linkedin.com/in/jason-l-81824417b/"
 
 collections:
-  authors:
-    output: true
   projects:
     output: true
 
