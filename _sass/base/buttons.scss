@@ -10,6 +10,10 @@
   position: relative;
   overflow: hidden;
 
+  &.opposite {
+    transform: rotate(180deg);
+  }
+
   &:hover {
     background-color: $colour-primary-black;
     transition: all 0.3s ease;

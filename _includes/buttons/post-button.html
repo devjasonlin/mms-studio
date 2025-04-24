@@ -1,0 +1,39 @@
+{% if include.for == "next" %}
+  {% assign page_title = include.page.next.project_title | escape %}
+  {% assign page_url = include.page.next.url | relative_url %}
+  {% assign disable_status = true %}
+  {% if include.page.next %}
+    {% assign disable_status = false %}
+  {% endif %}
+{% elsif include.for == "previous" %}
+  {% assign page_title = include.page.previous.project_title | escape %}
+  {% assign page_url = include.page.previous.url | relative_url %}
+  {% assign disable_status = true %}
+  {% if include.page.previous %}
+    {% assign disable_status = false %}
+  {% endif %}
+{% endif %}
+
+<a class="main-project--link{% if disable_status %} disabled{% endif %}" href="{{ page_url }}" alt="{{ page_title }}">
+  {% if include.for == "next" %}
+  <span>
+    Next{% if disable_status %}{% else %} | {{ page_title }}{% endif %}
+  </span>
+  {% endif %}
+
+  <span class="common-btn-with-arrow{% if include.for == 'previous' %} opposite{% endif %}">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+      <path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+      <path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/>
+    </svg>
+  </span>
+
+
+  {% if include.for == "previous" %}
+  <span>
+    Previous{% if disable_status %}{% else %} | {{ page_title }}{% endif %}
+  </span>
+  {% endif %}
+</a>
