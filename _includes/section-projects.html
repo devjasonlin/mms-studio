@@ -9,7 +9,7 @@
     window.colours = "{{ colours }}";
   </script>
 
-  {% for project in site.projects reversed limit:6 %}
+  {% for project in site.posts reversed limit:6 %}
   <project-card class="section-wrapper section-wrapper-3">
   <!-- <project-card class="section-wrapper {% if forloop.index0 == 3 %}section-wrapper-4{% else %}section-wrapper-3{% endif %}"> -->
     <a href="{{ project.permalink }}" class="section-projects--project visible-animation">
