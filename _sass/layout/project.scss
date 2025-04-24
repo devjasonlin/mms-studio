@@ -89,6 +89,14 @@
     text-decoration: none;
     color: $colour-primary-black;
 
+    &.disabled {
+      pointer-events: none;
+      cursor: not-allowed;
+      background-color: rgba($colour-primary-black, 0.08);
+      color: $colour-grey-1;
+      border: 1.5px solid rgba($colour-primary-black, 0.08);
+    }
+
     &:hover {
       .common-btn-with-arrow {
         background-color: $colour-primary-black;
@@ -105,6 +113,41 @@
           opacity: 1;
         }
       }
+    }
+  }
+
+  .main-project--image {
+    width: 100%;
+    max-width: 80rem;
+    position: relative;
+    margin: 0 0 2rem 0;
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 66.66%;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 3rem;
+      box-shadow: 0 0 2rem rgba($colour-primary-black, 0.1);
+    }
+  }
+
+  .main-project--navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 2rem 0;
+
+    .main-project--link {
+      margin: 0;
     }
   }
 }
