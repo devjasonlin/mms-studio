@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }, {
-    threshold: 0.05 // 卡片露出10%就触发动画
+    threshold: 0.001 // 触发阈值
   });
 
   items.forEach(item => observer.observe(item));
