@@ -1,5 +1,8 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
-</nav>
+<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+<label class="main-button" for="menu-toggle">
+  <span>+</span>
+</label>
+<a href="#" class="menu-toggle--button menu-toggle--button-1">Contact me</a>
+<a href="/portfolio" class="menu-toggle--button menu-toggle--button-2">Portfolio</a>
+<a href="/about" class="menu-toggle--button menu-toggle--button-3">About me</a>
+<a href="/" class="menu-toggle--button menu-toggle--button-4">Home</a>
