@@ -16,7 +16,7 @@
 
 <a class="main-project--link{% if disable_status %} disabled{% endif %}" href="{{ page_url }}" alt="{{ page_title }}">
   {% if include.for == "next" %}
-  <span>
+  <span class="main-project--link-content">
     Next{% if disable_status %}{% else %} | {{ page_title }}{% endif %}
   </span>
   {% endif %}
@@ -32,7 +32,7 @@
 
 
   {% if include.for == "previous" %}
-  <span>
+  <span class="main-project--link-content">
     Previous{% if disable_status %}{% else %} | {{ page_title }}{% endif %}
   </span>
   {% endif %}

@@ -1,16 +1,18 @@
 <div class="main-project">
   <div class="main-project--container">
-    <project-card class="main-project--title">
+    <!-- <project-card class="main-project--title">
       <div class="background-with-random-colour">{{ page.project_title }}</div>
-    </project-card>
+    </project-card> -->
+    <div class="main-project--title">
+      <div class="main-project--title-bg" style="--bg: url('{{ page.image_00 }}');"></div>
+      <div class="main-project--title-content">
+        {{ page.project_title }}
+      </div>
+    </div>
     <div class="main-project--content">
-      <div class="main-project--line with-row">
-        {% include project-item.html label="INDUSTRY" content=page.industry %}
-        {% include project-item.html label="MY ROLE" content=page.my_role %}
-
+      <div class="main-project--line with-column with-link">
         <a class="main-project--link" target="_blank" href="{{ page.client_site }}" alt="View Site">
           <span>View Site</span>
-
           <span class="common-btn-with-arrow">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
               <path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/>
@@ -20,6 +22,15 @@
             </svg>
           </span>
         </a>
+      </div>
+
+      <div class="main-project--line with-column">
+        {% include project-item.html label="INDUSTRY" content=page.industry %}
+      </div>
+      <div class="section-divider"></div>
+
+      <div class="main-project--line with-column">
+        {% include project-item.html label="MY ROLE" content=page.my_role %}
       </div>
       <div class="section-divider"></div>
       
@@ -44,7 +55,7 @@
       </div>
       <div class="section-divider"></div>
 
-      <div class="main-project--line with-column">
+      <div class="main-project--line with-column with-images">
         <div class="main-project--item">
           <div class="main-project--item-label">screenshots</div>
           <div class="main-project--item-content">

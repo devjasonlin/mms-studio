@@ -7,14 +7,81 @@
     padding: 4rem 0 0 0;
   }
 
-  .main-project--title div {
-    width: fit-content;
-
-    padding: 8rem 10rem;
+  .main-project--title {
+    position: relative;
     border-radius: 3rem;
+    box-shadow: 0 0 2rem rgba($colour-primary-black, 0.1);
+    overflow: hidden;
 
-    font-size: 5rem;
-    font-weight: 800;
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba($colour-primary-black, 0.8), rgba($colour-primary-black, 0.2));
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .main-project--title-bg {
+      position: relative;
+      width: 100%;
+      height: 800px;
+      overflow: hidden;
+
+    
+      @include respond-to("large-down") {
+        height: 500px;
+      }
+      
+      @include respond-to("medium-down") {
+        height: 300px;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        padding-top: 66.66%;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-image: var(--bg);
+        background-position: center;
+        background-size: cover;
+
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .main-project--title-content {
+      width: 100%;
+      height: 100%;
+
+      font-size: 5rem;
+      font-weight: 800;
+      color: $colour-primary-white;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      z-index: 2;
+    }
   }
 
   .main-project--content {
@@ -53,24 +120,66 @@
 
     &.with-column {
       .main-project--item {
+        width: 100%;
         display: flex;
         gap: 1rem;
       }
-      .main-project--item-label {
-        width: 25%;
-        max-width: 25rem;
-        
 
+      &.with-images {
+        .main-project--item {
+          @include respond-to("medium-down") {
+            flex-direction: column;
+          }
+        }
+
+        .main-project--item-label {
+          @include respond-to("medium-down") {
+            width: 100%;
+          }
+        }
+        .main-project--item-content {
+          @include respond-to("medium-down") {
+            width: 100%;
+          }
+        }
+      }
+      .main-project--item-label {
+        width: 25rem;
         font-size: 1.4rem;
         font-weight: 600;
         text-transform: lowercase;
+
+        @include respond-to("large-down") {
+          width: 20rem;
+        }
+        
+        @include respond-to("medium-down") {
+          width: 35%;
+        }
       }
       .main-project--item-content {
-        width: calc(75% - 1rem);
+        width: calc(100% - 25rem);
         font-size: 1.4rem;
         line-height: 120%;
+
+        @include respond-to("large-down") {
+          width: calc(100% - 20rem);
+        }
+        
+        @include respond-to("medium-down") {
+          width: 65%
+        }
       }
       .main-project--item-image {}
+    }
+
+    &.with-link {
+      display: flex;
+      justify-content: flex-end;
+
+      .main-project--link {
+        border: 1px solid $colour-primary-black;
+      }
     }
   }
 
@@ -97,6 +206,16 @@
       border: 1.5px solid rgba($colour-primary-black, 0.08);
     }
 
+    @include respond-to("medium-down") {
+      border: none;
+    }
+
+    .main-project--link-content {
+      @include respond-to("medium-down") {
+        display: none;
+      }
+    }
+
     &:hover {
       .common-btn-with-arrow {
         background-color: $colour-primary-black;
@@ -118,7 +237,6 @@
 
   .main-project--image {
     width: 100%;
-    max-width: 80rem;
     position: relative;
     margin: 0 0 2rem 0;
 
