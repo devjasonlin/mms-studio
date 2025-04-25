@@ -30,6 +30,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  overflow: hidden;
 
   .section-wrapper {
     height: fit-content;
