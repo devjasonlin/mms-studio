@@ -25,6 +25,9 @@
     {{ content }}
     {% include section-footer.html %}
 
+    {% include navigation.html %}
+    {% include scroll-up.html %}
+
     {% assign colours = site.data.marquee | map: "colour" | join: "," %}
     <script>
       window.colours = "{{ colours }}";
