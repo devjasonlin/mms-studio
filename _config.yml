@@ -24,6 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   MMS Studio is a boutique Shopify development studio, specializing in custom Shopify sites. We are dedicated to providing high-quality, tailored solutions for your e-commerce needs.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.mms-studio.co.nz/" # the base hostname & protocol for your site, e.g. http://example.com
+gtm_id: G-GN3M8CPCDH
 
 introduction:
   title: "Hi! 👋🏼 I'm Jason 🦸🏼‍♂️"
