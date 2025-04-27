@@ -4,7 +4,26 @@
   align-items: center;
   padding: 2rem 0;
 
-  .main-contact--title{
+  .main-contact--paragraph {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto 3rem auto;
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  .main-contact--heading {
+    font-size: 3rem;
+    font-weight: 800;
+
+    padding: 2rem 0;
+  }
+
+  .main-contact--title {
     font-size: 3rem;
     font-weight: 800;
 
@@ -14,7 +33,6 @@
   .main-contact--form {
     width: 100%;
     max-width: 50rem;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
