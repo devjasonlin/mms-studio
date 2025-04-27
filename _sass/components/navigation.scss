@@ -44,6 +44,12 @@
 
   transition: all 0.3s ease;
 
+  @include respond-to("medium-down") {
+    width: 6rem;
+    height: 6rem;
+    font-size: 1.2rem;
+  }
+
   &:hover {
     background-color: $colour-primary-black;
     transition: all 0.3s ease;
@@ -82,21 +88,37 @@
     ~ .menu-toggle--button-1 {
       transform: translate(180px, 60px);
       transition-delay: 0.2s;
+
+      @include respond-to("medium-down") {
+        transform: translate(120px, 60px);
+      }
     }
 
     ~ .menu-toggle--button-2 {
       transform: translate(128px, -38px);
       transition-delay: 0.15s;
+
+      @include respond-to("medium-down") {
+        transform: translate(85px, -10px);
+      }
     }
 
     ~ .menu-toggle--button-3 {
       transform: translate(48px, -108px);
       transition-delay: 0.1s;
+
+      @include respond-to("medium-down") {
+        transform: translate(25px, -65px);
+      }
     }
 
     ~ .menu-toggle--button-4 {
       transform: translate(-55px, -150px);
       transition-delay: 0.05s;
+
+      @include respond-to("medium-down") {
+        transform: translate(-50px, -100px);
+      }
     }
   }
 }
