@@ -1,0 +1,48 @@
+---
+title: Contact me
+layout: default
+---
+<link rel="stylesheet" href="{{ '/assets/css/contact.css' | relative_url }}">
+<div class="main-content main-contact--container">
+  <h1 class="main-contact--title">Drop me a message</h1>
+  <form
+    class="main-contact--form"
+    action="https://formspree.io/f/xnndngod"
+    method="POST"
+  >
+    <input 
+      class="main-contact--form-field" 
+      type="text" 
+      name="name" 
+      placeholder="Name"
+      required
+    />
+    <input 
+      class="main-contact--form-field" 
+      type="email" 
+      name="email" 
+      placeholder="Email"
+      required
+    />
+    <textarea 
+      class="main-contact--form-field" 
+      name="message" 
+      placeholder="Message"
+      rows="5"
+      required
+    ></textarea>
+
+    <button type="submit" class="main-contact--form-submit">
+      <span>Drop message</span>
+    
+      <span class="common-btn-with-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <path d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"/>
+        </svg>
+      </span>
+    </button>
+  </form>
+</div>
