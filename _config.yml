@@ -94,6 +94,16 @@ social_links:
   - label: "LinkedIn"
     url: "https://www.linkedin.com/in/jason-l-81824417b/"
 
+navigation:
+  - label: "Home"
+    url: "/"
+  - label: "Portfolio"
+    url: "/portfolio"
+  - label: "About"
+    url: "/about"
+  - label: "Contact"
+    url: "/contact"
+
 collections:
   projects:
     output: true
