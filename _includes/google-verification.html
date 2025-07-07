@@ -1,1 +1,3 @@
-<meta name="google-site-verification" content="{{ site.gogole_verification }}" />
+{% if jekyll.environment != 'development' %}
+  <meta name="google-site-verification" content="{{ site.gogole_verification }}" />
+{% endif %}
