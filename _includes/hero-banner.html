@@ -1,0 +1,21 @@
+{% assign hero_banner_image = '/assets/images/banners/hero.jpg' %}
+<hero-banner class="hero-banner with-parallax">
+  <div class="hero-banner__image">
+    <img
+      src="{{ hero_banner_image | relative_url }}"
+      alt="Hero Banner"
+      data-parallax-image
+    >
+  </div>
+
+  <div class="hero-banner__content">
+    <div class="hero-banner__ad">
+      <div class="hero-banner__ad-title">{{ site.hero_ad_title }}</div>
+      <div class="hero-banner__ad-text">{{ site.hero_ad_text }}</div>
+    </div>
+    <div class="hero-banner__content-text">
+      <h1 class="hero-banner__content-title">{{ site.site_name }}</h1>
+      {{ site.studio_intro }}
+    </div>
+  </div>
+</hero-banner>

@@ -2,9 +2,14 @@ import { MarqueeEle } from './components/marquee-ele.js';
 import { ProjectCard } from './components/project-card.js';
 import { NavigationEle } from './components/navigation-ele.js';
 import { ScrollUp } from './components/scroll-up.js';
+import { HeroBanner } from './components/hero-banner.js';
 
 if (!window.customElements.get('marquee-ele')) {
   customElements.define('marquee-ele', MarqueeEle);
+}
+
+if (!window.customElements.get('hero-banner')) {
+  customElements.define('hero-banner', HeroBanner);
 }
 
 if (!window.customElements.get('project-card')) {
