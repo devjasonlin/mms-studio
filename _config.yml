@@ -43,8 +43,11 @@ author: Jason Lin
 position: Founder / Developer
 studio_url: mms-studio.co.nz
 author_intro: "Shopify developer with 6+ years of experience, specializing in building custom Shopify websites tailored to unique business needs. Skilled in theme customization, performance optimization, and user-focused design. Ready to help bring any e-commerce vision to life."
+studio_intro: "MMS Studio is a boutique Shopify development studio, specializing in custom Shopify sites. We are dedicated to providing high-quality, tailored solutions for your e-commerce needs."
 author_bio: "Jason - Senior Shopify developer based in New Zealand🇳🇿, with over 6 years of experience working at local Shopify agencies. I'm passionate about freelancing and offers high-quality Shopify development services at more affordable rates."
 author_sub_bio: "Always eager to grow by tackling new challenges, from small tasks to large-scale projects. Skilled in the following areas:"
+hero_ad_title: "Build your Shopify store"
+hero_ad_text: "grow fast with MMS Studio"
 services: [
   "Shopfiy Store Setup",
   "Shopify Theme Customization",
@@ -93,6 +96,16 @@ social_links:
     url: "https://www.unicornfactory.nz/profiles/jason-lin"
   - label: "LinkedIn"
     url: "https://www.linkedin.com/in/jason-l-81824417b/"
+
+navigation:
+  - label: "Home"
+    url: "/"
+  - label: "Portfolio"
+    url: "/portfolio"
+  - label: "About"
+    url: "/about"
+  - label: "Contact"
+    url: "/contact"
 
 collections:
   projects:
