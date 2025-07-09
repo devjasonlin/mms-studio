@@ -1,6 +1,7 @@
 import { MarqueeEle } from './components/marquee-ele.js';
 import { ProjectCard } from './components/project-card.js';
 import { NavigationEle } from './components/navigation-ele.js';
+import { NavigationEleV2 } from './components/navigation-ele-v2.js';
 import { ScrollUp } from './components/scroll-up.js';
 import { HeroBanner } from './components/hero-banner.js';
 
@@ -18,6 +19,10 @@ if (!window.customElements.get('project-card')) {
 
 if (!window.customElements.get('navigation-ele')) {
   customElements.define('navigation-ele', NavigationEle);
+}
+
+if (!window.customElements.get('navigation-ele-v2')) {
+  customElements.define('navigation-ele-v2', NavigationEleV2);
 }
 
 if (!window.customElements.get('scroll-up')) {
