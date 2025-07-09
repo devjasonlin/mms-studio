@@ -1,13 +1,15 @@
-<input type="checkbox" id="v2-navigation-toggle" class="v2-navigation-toggle" title="Toggle navigation" />
-<label class="v2-navigation-toggle-label" for="v2-navigation-toggle">
-  <span></span>
-  <span></span>
-</label>
+<navigation-ele-v2>
+  <input type="checkbox" id="v2-navigation-toggle" class="v2-navigation-toggle" title="Toggle navigation" />
+  <label class="v2-navigation-toggle-label" for="v2-navigation-toggle">
+    <span></span>
+    <span></span>
+  </label>
 
-<div class="v2-navigation">
-  {% for item in site.navigation %}
-    <a class="navigation-link{% if page.url == item.url %} active{% endif %}" href="{{ item.url }}">
-      {{ item.label }}
-    </a>
-  {% endfor %}
-</div>
+  <div class="v2-navigation">
+    {% for item in site.navigation %}
+      <a class="navigation-link{% if page.url == item.url %} active{% endif %}" href="{{ item.url }}">
+        {{ item.label }}
+      </a>
+    {% endfor %}
+  </div>
+</navigation-ele-v2>
