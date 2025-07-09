@@ -1,11 +1,13 @@
 {% assign hero_banner_image = '/assets/images/banners/hero.jpg' %}
 <hero-banner class="hero-banner with-parallax">
   <div class="hero-banner__image">
-    <img
-      src="{{ hero_banner_image | relative_url }}"
-      alt="Hero Banner"
-      data-parallax-image
-    >
+    {% include image.html
+      image_url=hero_banner_image
+      src_widths="400,600,800,1000,1200,1600"
+      alt="MMS Studio - Hero Image"
+      class="hero-banner__img" 
+      attributes="data-parallax-image" 
+    %}
   </div>
 
   <div class="hero-banner__content">

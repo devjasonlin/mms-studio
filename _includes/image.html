@@ -1,0 +1,33 @@
+<!-- {% include image.html
+  image_url=hero_banner_image
+  src_widths="400,600,800,1000,1200,1600"
+  alt="MMS Studio - Hero Image"
+  class="hero-banner__img" 
+  attributes="data-parallax-image" 
+%} -->
+
+{% assign image_url = include.image_url %}
+{% assign src_widths = include.src_widths | split: "," %}
+{% assign src_sizes = include.src_sizes | default: "100vw" %}
+{% assign alt = include.alt | default: "" %}
+{% assign class = include.class | default: "" %}
+{% assign lazy_loading = include.lazy_loading | default: true %}
+{% assign attributes = include.attributes | default: "" %}
+
+<img
+  {% if src_widths.size > 1 %}
+    srcset="
+      {% for width in src_widths %}
+        {{ image_url | relative_url }}?width={{ width | strip }} {{ width | strip }}w,
+      {% endfor %}
+    "
+    sizes="{{ src_sizes }}"
+    src="{{ image_url | relative_url }}?width={{ src_widths.last | strip }}"
+  {% else %}
+    src="{{ image_url | relative_url }}"
+  {% endif %}
+  alt="{{ alt }}"
+  {% if class != "" %}class="{{ class }}"{% endif %}
+  {% if lazy_loading %}loading="lazy"{% endif %}
+  {{ attributes }}
+/>
