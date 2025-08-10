@@ -32,8 +32,9 @@
   .hero-banner__content {
     z-index: 1;
     width: 100%;
+    max-width: $max-width;
     height: 100%;
-    padding: 10rem;
+    padding: 10rem 16px;
     box-sizing: border-box;
     color: $colour-primary-white;
 
