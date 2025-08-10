@@ -4,6 +4,7 @@ import { NavigationEle } from './components/navigation-ele.js';
 import { NavigationEleV2 } from './components/navigation-ele-v2.js';
 import { ScrollUp } from './components/scroll-up.js';
 import { HeroBanner } from './components/hero-banner.js';
+import { IntroductionSlider } from './components/introduction-slider.js';
 
 if (!window.customElements.get('marquee-ele')) {
   customElements.define('marquee-ele', MarqueeEle);
@@ -28,3 +29,6 @@ if (!window.customElements.get('navigation-ele-v2')) {
 if (!window.customElements.get('scroll-up')) {
   customElements.define('scroll-up', ScrollUp);
 }
+
+// 初始化IntroductionSlider
+new IntroductionSlider();

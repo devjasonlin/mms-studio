@@ -1,0 +1,26 @@
+<div class="section-container-v2 introduction-v2">
+  <div class="section__content">
+    <div class="section__content--inner">
+      <div class="section__content-left">
+        <div class="section__content-wrapper">
+          <div class="section__content-lg">{{ site.intro_v2.title }}</div>
+        </div>
+      </div>
+      <div class="section__content-right">
+        <div class="section__content-wrapper">
+          <div class="section__content-md">{{ site.intro_v2.description }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="introduction__slider js-flickity">
+      {% for project in site.projects_v2 %}
+        <div class="introduction__slider-item">
+          <div class="introduction__slider-item-image">
+            <img src="{{ project.image }}" alt="{{ project.title }}">
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -97,6 +97,49 @@ social_links:
   - label: "LinkedIn"
     url: "https://www.linkedin.com/in/jason-l-81824417b/"
 
+intro_v2:
+  title: From small local businesses to growing eCommerce brands.
+  description: <p>We believe in the power of well-crafted, functional websites that turn visitors into customers.<p><p>Our team designs with passion and tackles every challenge — whether it's a sleek online store for a boutique or a scalable solution for expanding brands. Your website should not only look great but also drive results.</p><p>Simplicity is key. We focus on clean, user-friendly designs that prioritize seamless navigation and fast performance. Let us bring your vision to life with custom themes, apps, and integrations tailored to your needs.</p>
+
+projects_v2:
+  - title: "Victor Churchill"
+    description: "Shopify rebrand service"
+    image: "/assets/images/projects/victor-churchill-00.jpg"
+    url: "https://victor-churchill.myshopify.com/"
+  - title: "JD Sports"
+    description: "Shopify rebrand service"
+    image: "/assets/images/projects/jd-00.jpg"
+    url: "https://www.jdsports.com.sg/"
+  - title: "SLH Furtniture"
+    description: "Shopify retainer service"
+    image: "/assets/images/projects/slh-00.jpg"
+    url: "https://slh.com.au/"
+  - title: "Christ Chart"
+    description: "Shopify rebrand service"
+    image: "/assets/images/projects/christ-chart-00.jpg"
+    url: "https://www.christ.st/"
+  - title: "Life Pharmacy"
+    description: "Shopify rebrand service"
+    image: "https://www.lifepharmacy.co.nz/"
+    url: "/assets/images/projects/life-pharmacy-00.jpg"
+  - title: "True Kit"
+    description: "Shopify rebrand service"
+    image: "/assets/images/projects/true-kit-00.jpg"
+    url: "https://truekit.net/"
+  - title: "UBCO"
+    description: "Shopify retainer service"
+    image: "/assets/images/projects/ubco-00.jpg"
+    url: "https://ubco.com/"
+  - title: "Rebecca Vallance"
+    description: "Shopify retainer service"
+    image: "/assets/images/projects/rebecca-vallance-00.jpg"
+    url: "https://rebeccavallance.com/"
+  - title: "flo & frankie"
+    description: "Shopify retainer service"
+    image: "/assets/images/projects/flo-and-frankie-00.jpg"
+    url: "https://www.floandfrankie.com.au/"
+    
+    
 navigation:
   - label: "Home"
     url: "/"
