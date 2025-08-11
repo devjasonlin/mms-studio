@@ -1,6 +1,14 @@
 .introduction-v2 {
   display: flex;
 
+  .section__content {
+    padding-bottom: 10rem;
+
+    @include respond-to('large-down') {
+      padding-bottom: 6rem;
+    }
+  }
+
   .introduction__slider {
     width: 100%;
     
