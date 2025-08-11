@@ -1,0 +1,87 @@
+.services-container {
+  background-color: $colour-black-1;
+
+  .section__content {
+    padding-bottom: 10rem;
+
+    @include respond-to('large-down') {
+      padding-bottom: 6rem;
+    }
+  }
+  
+  .section__content-sm {
+    color: $colour-grey-1;
+  }
+
+  .section__content-lg,
+  .section__content-md {
+    color: $colour-primary-white;
+  }
+  .section__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+
+    @include respond-to('large-down') {
+      gap: 6rem;
+    }
+  }
+
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    color: $colour-primary-white;
+
+    .services-list__item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 50%;
+      box-sizing: border-box;
+      padding: 0 2rem 5rem 2rem;
+
+      @include respond-to('large-down') {
+        width: 100%;
+        padding: 0 0 5rem 0;
+      }
+
+      &:nth-child(odd) {
+        border-right: 1px solid rgba($color: $colour-grey-1, $alpha: 0.11);
+
+        @include respond-to('large-down') {
+          border: none;
+        }
+      }
+    }
+
+    .services-list__item-index {
+      width: 100%;
+      border-bottom: 1px solid rgba($color: $colour-grey-1, $alpha: 0.11);
+      padding: 0 0 1rem 0;
+      margin: 0 0 2rem 0;
+    }
+
+    .services-list__item-title {
+      width: 35%;
+
+      font-size: 2rem;
+      line-height: 1.2;
+
+      @include respond-to('large-down') {
+        width: 100%;
+        margin: 0 0 1rem 0;
+      }
+    }
+
+    .services-list__item-description {
+      width: 55%;
+      font-size: 1.5rem;
+      line-height: 1.7;
+      color: $colour-grey-1;
+
+      @include respond-to('large-down') {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<div class="section-container-v2 services-container">
+  <div class="section__content">
+    <div class="section__content--inner">
+      <div class="section__content-left">
+        <div class="section__content-wrapper">
+          <div class="section__content-sm">{{ site.services_v2_section.title }}</div>
+          <div class="section__content-lg">{{ site.services_v2_section.description }}</div>
+        </div>
+      </div>
+      <div class="section__content-right"></div>
+    </div>
+    <div class="services-list">
+      {% for service in site.services_v2_section.services %}
+        <div class="services-list__item">
+          <div class="services-list__item-index section__content-sm">{{ forloop.index }}</div>
+          <div class="services-list__item-title">{{ service.title }}</div>
+          <div class="services-list__item-description">{{ service.description }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

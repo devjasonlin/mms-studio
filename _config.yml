@@ -138,8 +138,22 @@ projects_v2:
     description: "Shopify retainer service"
     image: "/assets/images/projects/flo-and-frankie-00.jpg"
     url: "https://www.floandfrankie.com.au/"
-    
-    
+
+services_v2_section:
+  title: "Our Services"
+  description: "We offer a range of services to help you grow your business online. From store setup to maintenance and SEO optimization, we've got you covered."
+  services:
+    - title: "Shopify Store Setup"
+      description: "We provide a seamless and professional Shopify store setup, ensuring your eCommerce platform is ready to launch with the right structure, design, and functionality tailored to your brand."
+    - title: "Shopify Theme Customization"
+      description: "Stand out from the competition with a unique, visually appealing storefront. Our experts customize Shopify themes to match your brand identity while enhancing user experience and conversion rates."
+    - title: "Shopify App Integration"
+      description: "Enhance your store's functionality with custom app integrations. We integrate third-party apps to streamline your operations, automate tasks, and improve customer engagement."
+    - title: "Shopify Store Maintenance"
+      description: "Keep your store running smoothly with regular updates and maintenance. We ensure your platform is secure, optimized, and up-to-date to support your business growth."
+    - title: "Shopify SEO Optimization"
+      description: "Boost your visibility in search engines with optimized storefronts and content. Our SEO experts implement best practices to improve your search rankings and drive organic traffic."
+
 navigation:
   - label: "Home"
     url: "/"
